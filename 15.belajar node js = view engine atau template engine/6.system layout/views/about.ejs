@@ -1,0 +1,46 @@
+<!-- nah jadi kalian tulis <%- %> 
+nah ini gunanya sama sama untuk mencetak kehatml 
+
+tapi bedanya kalo pakai sama dengan 
+semua tag htmlnya nanti akan ditulis sebagai escape karakter 
+ya jadi pakai %- -->
+
+<%- include('./layouts/header') %> 
+
+<!-- didalam method include kita tulis pathnya 
+yaitu potongan potongan code tadi
+
+jadi kita butuh header dulu 
+kita include headernya -->
+
+    <h1>halaman about</h1>
+
+<!-- lalu kita ambil lagi yang footernya  -->
+
+<%- include('./layouts/footer') %> 
+
+
+<!-- kalian bisa tulis beserta extensi filenya
+atau langsung nama filenya
+
+jadi konsep include ini sama seperti require
+atau sama seperti import pada python
+
+yang mana dia akan memanggil fungsionalitas pada file 
+lain 
+
+dan fungsionalitas tersebut akan berada pada file yang dipanggil
+
+
+jadi kalo kita tulis include
+maka sebenarnya itu ada tag tag html yang ada didalam include
+
+
+-->
+
+
+<!-- nah begitu pula dengan halaman contact
+kita tinggal panggil sama header sama footernya 
+
+
+kita pergi kehalaman contact-->

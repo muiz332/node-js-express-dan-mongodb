@@ -1,0 +1,55 @@
+/*
+
+dimateri kali ini kita akan mencoba menjalankan atau mengeksekusi file javascript 
+yang kita buat melalui runtimenya node js
+
+
+jadi untuk menjalankan file node js itu sebenarnya sangat sederhana ya
+yang kalian 
+
+
+nah sekarang kita buat filenya yang namanya coba.js
+kita pindah ke coba.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row mb-5">
+        <div class="col"><h1>ini adalah halaman tambah kontak</h1></div>
+    </div>
+    
+    <% if (typeof(errors) != 'undefined' ){ %>
+         <div class="row">
+             <div class="col-md-5">
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <% errors.forEach(err => { %>
+                         <li><%= err.msg %> </li>
+                        <% }) %>
+                    </ul>
+                  </div>
+             </div>
+         </div>
+    <% } %>
+
+    <div class="row mt-2">
+        <div class="col-md-5">
+            <form method="post" action="/contact">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" name="nama" required autofocus>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="noHP" class="form-label">No HP</label>
+                  <input type="tel" class="form-control" id="noHP" name="noHP" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Tambah Contact</button>
+              </form>
+        </div>
+    </div>
+</div>

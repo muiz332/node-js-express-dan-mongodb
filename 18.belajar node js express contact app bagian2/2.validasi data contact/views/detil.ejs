@@ -1,0 +1,19 @@
+<h1>ini adalah halaman detil</h1>
+
+<section>
+    <h3>detil Contact</h3>
+    <% if(!mahasiswa) { %> 
+        <div class="alert alert-info" role="alert">
+            tidak ada mahasiswa bernama <%= nama  %>  <a href="/contact" class="alert-link">Kembali kehalaman contact</a>
+          </div>
+    <% }else{ %>
+        <ul>
+            <li><%= mahasiswa.nama %> </li>
+            <li><%= mahasiswa.email %> </li>
+            <li><%= mahasiswa.noHP %> </li>
+        </ul>
+
+        <a href="/contact" class="btn btn-success">Kembali</a>
+        
+    <% } %> 
+</section>

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col"><h1>ini adalah halaman ubah Kontak</h1></div>
+    </div>
+    <% if (typeof(errors) != 'undefined' ){ %>
+        <div class="row">
+            <div class="col-md-5">
+               <div class="alert alert-danger" role="alert">
+                   <ul>
+                       <% errors.forEach(err => { %>
+                        <li><%= err.msg %> </li>
+                       <% }) %>
+                   </ul>
+                 </div>
+            </div>
+        </div>
+   <% } %>
+
+    <div class="row mt-5">
+        <div class="col-md-5">
+            <form method="post" action="/contact/update">
+                <div class="mb-3">
+                  <input type="hidden" class="form-control" id="namaLama" name="namaLama" value="<%= document.namaLama ||  document.nama %>">
+                </div>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" name="nama" value="<%= document.nama %>">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" value="<%= document.email %>" > 
+                </div>
+                <div class="mb-3">
+                  <label for="noHP" class="form-label">No Hp</label>
+                  <input type="tel" class="form-control" id="noHP" name="noHP" value="<%= document.noHP %>">
+                </div>
+                <button type="submit" class="btn btn-primary">Ubah Kontak</button>
+              </form>
+        </div>
+    </div>
+</div>

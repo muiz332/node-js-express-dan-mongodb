@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><% title %> </title>
+</head>
+<body>
+
+    <h1>selamat datang <%= nama%></h1>
+
+    <!-- nah setelah datanya dikirimkan kehalaman ini 
+    sekarang bagaimana cara untuk menampilkannya? -->
+
+    <h3>daftar mahasiswa</h3>
+
+    <!-- nah kita bisa melakukan looping pada tag htmlnya
+    misalkan saya ingin menampilkan kedalam sebuah ul -->
+
+
+    <% mahasiswa.forEach(mhs => { %>
+        <ul>
+            <li>Nama <%= mhs.nama %> </li>
+            <li>email <%= mhs.email %> </li>
+        </ul>
+    <% }) %>
+
+
+    <!-- kalo saya jalankan maka akan tampil semua datanya ya 
+    kita bisa gunakan for atau gunakan forEach ya 
+
+    selain looping kita juga bisa menambahkan if sebagai
+    salah satu control flow tadi 
+
+    nah sekarnag kita bisa check 
+    kalo data mahasiswanya kosong tuliskan
+    data mahasiswa masih kosong-->
+
+    <h3>check data mahasiswa</h3>
+
+    <% if(!mahasiswa.length){ %>
+        <p>data mahasiswa masih kosong</p>
+    <% }else{ %> 
+        <% mahasiswa.forEach(mhs => { %>
+            <ul>
+                <li>Nama <%= mhs.nama %> </li>
+                <li>email <%= mhs.email %> </li>
+            </ul>
+        <% }) %>
+    
+    <% } %> 
+
+    <!-- begitu ya kita bisa melakukan control flow didalam ejs -->
+
+    
+
+</body>
+</html>

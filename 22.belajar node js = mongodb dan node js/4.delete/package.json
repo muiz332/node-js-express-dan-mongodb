@@ -1,0 +1,15 @@
+{
+  "name": "mongodb_dan_nodejs",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "connect mongodb menggunakan node js",
+  "main": "mongodb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muiz",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.5.0"
+  }
+}

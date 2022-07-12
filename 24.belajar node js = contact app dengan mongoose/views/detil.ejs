@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col"><h1>ini adalah halaman detil</h1></div>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><%= document.nama %> </h5>
+                  <p class="card-text"><%= document.email %> </p>
+                  <p class="card-text"><%= document.noHP %> </p>
+                  <a href="/detil/delete/<%= document.nama %>" class="btn btn-danger" onclick="return confirm('yakin?')">Delete</a>
+                  <a href="/contact/update/<%= document.nama %>" class="btn btn-primary">Update</a>
+                  <a href="/contact" class="card-link mt-3 d-block">Kembali</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
